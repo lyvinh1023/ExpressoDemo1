@@ -1,1 +1,1 @@
-# SampleHybridApp
+# SampleHybridApp automation with Espresso
