@@ -55,7 +55,7 @@ public class DemoTests {
     }
 
     @Test
-    public void test2() {
+    public void test2() throws InterruptedException {
         onWebView()
                 .withElement(findElement(Locator.NAME, "username"))
                 .perform(webKeys("test"))
@@ -70,6 +70,7 @@ public class DemoTests {
         onWebView()
                 .withElement(findElement(Locator.XPATH, "//a"))
                 .check(webMatches(getText(), containsString("More information")));
+        Thread.sleep(5000);
     }
 
     @After
